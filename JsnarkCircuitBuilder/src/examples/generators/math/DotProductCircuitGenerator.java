@@ -45,7 +45,7 @@ public class DotProductCircuitGenerator extends CircuitGenerator {
 		generator.generateCircuit();
 		generator.evalCircuit();
 		generator.prepFiles();
-		generator.runLibsnark();	
+		//generator.runLibsnark();
 	}
 
 }

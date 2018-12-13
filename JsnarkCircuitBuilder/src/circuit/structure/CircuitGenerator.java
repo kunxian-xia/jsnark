@@ -174,6 +174,7 @@ public abstract class CircuitGenerator {
 
 	public Wire makeOutput(Wire wire, String... desc) {
 		Wire outputWire = wire;
+		//TODO: add comment
 		if (!(wire instanceof VariableWire || wire instanceof VariableBitWire) || inWires.contains(wire)) {
 			outputWire = makeVariable(wire, desc);
 		} else if (inWires.contains(wire) || proverWitnessWires.contains(wire)) {
